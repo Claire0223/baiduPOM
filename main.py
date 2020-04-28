@@ -10,8 +10,8 @@ if __name__ =='__main__':
  
     newtime=time.strftime('%Y_%m_%d %H-%M-%S')
     filename='D:\\python\\baiduPOM\\commom\\'+' '+ newtime +' '+'result.html'
-    fp=open(filename,'wb')
+    fp=open(filename,'w')
 
-    runner=HTMLTestRunner(stream=fp,title='testreport',description='测试用例情况')
+    runner=HTMLTestRunner(stream=fp,title='testreport', description='测试用例情况')
     runner.run(testunit)
     fp.close()
